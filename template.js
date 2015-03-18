@@ -46,10 +46,12 @@ exports.template = function (grunt, init, done) {
         var devDependencies = {
             'grunt': '~0.4.5',
             'grunt-contrib-watch': '~0.6.1',
-            "grunt-ember-templates": '~0.4.21',
-            "grunt-contrib-jshint": '^0.11.0',
-            "grunt-contrib-uglify": '^0.7.0',
-            "grunt-contrib-less": '^1.0.0',
+            'grunt-ember-templates': '~0.4.21',
+            'grunt-contrib-jshint': '^0.11.0',
+            'grunt-contrib-uglify': '^0.7.0',
+            'grunt-contrib-less': '^1.0.0',
+            'grunt-shell': '^1.1.1',
+            'grunt-node-webkit-builder': '^1.0.0'
         };
 
         // Generate package.json file, used by npm and grunt.
