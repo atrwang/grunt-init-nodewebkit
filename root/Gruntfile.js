@@ -40,7 +40,7 @@ module.exports = function (grunt) {
                      command:'zip -q -r app.nw libs resources src templates application.js config.js index.html package.json loading.html router.js'
                 },
                 move: {
-                     command:'mv -f app.nw /Users/kevin/Desktop/plaso_compose.app/Contents/Resources/app.nw'
+                     command:'mv -f app.nw /Users/kevin/Desktop/compose.app/Contents/Resources/app.nw'
                 }
         },
         less: {
@@ -52,6 +52,17 @@ module.exports = function (grunt) {
                      "path/to/result.css": "path/to/source.less"
                      }
                 }
+        },
+        nodewebkit: {
+             options: {
+                     cacheDir:'/Users/kevin/Desktop/Sample/node-webkit',//if no cacheDir,will create automatic in current dir ./cache
+                     platforms:['win','osx'],
+                     buildDir: './builds',
+                     version:'0.11.6',//node-webkit version
+                     macIcns:'./superboss.icns',
+                     winIco:'./superboss.ico'
+                     },
+            src: ['libs/**/*.js', 'resources/**/*','!resources/css/*.less','!resources/**/*.bak', 'src/**', 'application.js', 'config.js', 'index.html', 'package.json', 'loading.html', 'router.js', 'windowIcon.png', 'node_modules/request/**', 'node_modules/request-progress/**']
         },
         watch: {
                      
@@ -86,5 +97,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-node-webkit-builder');
     grunt.registerTask('default', ['emberTemplates','jshint','uglify','shell','less']);
 };

@@ -1,0 +1,19 @@
+/*This is main package for node-webkit*/
+{
+  "main": "index.html",
+  "name": “NodeWebkitAppName”,
+  "version": "1.001.0001", 
+  "chromium-args": "--ignore-certificate-errors --enable-threaded-compositing",
+  "single-instance": true,
+  "window": {
+    "title": "NodeWebkitAppName",
+    "icon": "windowIcon.png",
+    "toolbar": true,
+    "width": 1060,
+    "height": 720,
+    "min_width": 1060,
+    "min_height": 720,
+    "frame": true,
+    "show": false
+  }
+}

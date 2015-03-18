@@ -2,5 +2,6 @@
     	"Gruntfile.js":"libs/Gruntfile.js",
     	"bower.json":"libs/bower.json",
 	"router.js":"src/router.js",
-	"application.js":"src/application.js"
+	"application.js":"src/application.js",
+    "node-webkit/package.json":"package.json"
  }
