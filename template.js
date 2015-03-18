@@ -53,7 +53,7 @@ exports.template = function (grunt, init, done) {
         };
 
         // Generate package.json file, used by npm and grunt.
-        init.writePackageJSON('package.json', {
+        init.writePackageJSON('./libs/package.json', {
             name: 'my-project-name',
             version: '0.1.0',
             devDependencies: devDependencies
