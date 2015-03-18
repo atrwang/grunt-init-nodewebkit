@@ -1,8 +1,2 @@
-window.PlasoManage = Ember.Application.create();
+window.EmberProject = Ember.Application.create();
 
-$(document).on('click', '#btn_login', function() {
- 
-                    })
-$(document).on('click', '#btn_logout', function() {
-               
-                    })

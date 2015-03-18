@@ -12,11 +12,6 @@ PlasoManage.LoginRoute = Ember.Route.extend({
             controller.checkNetworkAndUpdata();
             $('#busy').fadeOut();
         }, 20);
-    },
-    renderTemplate: function () {
-        this.render({
-            outlet: 'loginContent'
-        });
     }
 });
 

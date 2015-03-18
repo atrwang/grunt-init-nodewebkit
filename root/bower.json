@@ -2,7 +2,7 @@
   "name": "emberjs",
   "version": "1.0.0",
   "dependencies": {
-    "jquery": "~2.1.0",
+    "jquery": "~1.11.2",
     "handlebars": "~2.0.0",
     "ember": "~1.9.0"
   }
