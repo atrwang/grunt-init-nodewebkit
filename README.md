@@ -24,3 +24,7 @@ github:               [ https://github.com/gruntjs](http://https://github.com/gr
 
 
 Bower reference:  [http://bower.io/](http://bower.io/)
+
+//Add grunt-node-webkit-builder need sudo
+
+https://github.com/mllrsohn/grunt-node-webkit-builder
